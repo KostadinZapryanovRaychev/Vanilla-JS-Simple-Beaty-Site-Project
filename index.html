@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenFoods</title>
+    <!-- adding styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <header class="active" id="navbar">
+         <a hfre="#" class="logo">Victoria<span>Fashion</span></a>
+         <ul>
+             <li><a href="#" class="active">Home</a>iovio
+             <li><a href="#">Catalogue</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+         <span class="menuIcon" onclick="menuToggle();"></span>
+       </header>
+       <div class="content">
+           <div class="bannerText" id="slideshowText">
+              <div class="active">
+                <h2>Hairstyle<br> Matters</h2>
+                <p>Get expert advice and learn how to achieve today's latest hairstyles and hottest trends. Discover long, medium length and short hairstyles to find the best look for your hair length. You can also learn how to re-create an elegant updo or bun. Get inspiration and hair styling tips for easy hairstyles for men and women. With our tips and tutorials you can find the perfect style for your hair.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="bannerImg" id="slideshow">
+                <img src="viki3.jpg" class="active">
+                <img src="viki2.jpg">
+                <img src="viki.jpg">
+            </div>
+        </div>
+        <div class="icons"> 
+            <ul class="sci">
+               <li><a href="#"><img src="facebook.svg" ></a></li>
+               <li><a href="#"><img src="twitter.jpg" ></a></li>
+               <li><a href="#"><img src="instagram2.jpg"></a></li>
+            </ul>
+            <ul class="sci">
+              <li><a href="#"><img src="left-arrow-angle-big-gross-symbol.png"  onclick="prevSlide();prevSlideText();"></a></li>
+              <li><a href="#"><img src="right-arrow.png" onclick="nextSlide();nextSlideText();"></a></li>
+            </ul> 
+        </div>
+    </div>
+    <!-- here we add js functionalities to html -->
+    <script src="app.js"></script>
+</body>
+</html>
