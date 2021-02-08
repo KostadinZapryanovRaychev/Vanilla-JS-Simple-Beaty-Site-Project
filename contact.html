@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VictoriaFashion</title>
+    <!-- adding styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <header class="active" id="navbar">
+         <a hfre="#" class="logo">Victoria<span>Fashion</span></a>
+         <ul>
+             <li><a href="index.html" >Home</a>
+             <li><a href="catalogue.html">Catalogue</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html" class="active">Contact</a></li>
+         </ul>
+         <span class="menuIcon" onclick="menuToggle();"></span>
+        </header>
+        <div class="spanner">   
+        <div class="friends">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="burgas">Plovdiv</option>
+              <option value="sofia">Sofia</option>
+              <option value="varna">Varna</option>
+              <option value="plovdiv">Plovdiv</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+           <!-- ballooons -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+       
+        </div>
+        </div>
+      
+    <!-- here we add js functionalities to html -->
+    <script src="app.js"></script>
+</body>
+</html>

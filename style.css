@@ -286,3 +286,323 @@ header ul li a.active:before {
     max-width: 40px;
   }
 }
+
+body {
+  margin-top: 20px;
+}
+
+.img-effect:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  border-radius: 0px;
+  -webkit-transform: scale(1.2, 1.2);
+  -webkit-transition-timing-function: ease-out;
+  -moz-transform: scale(1.2, 1.2);
+  -moz-transition-timing-function: ease-out;
+  -ms-transform: scale(1.2, 1.2);
+  -ms-transition-timing-function: ease-out;
+
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #1f201f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #3a3b3a;
+}
+
+@media screen and (max-width: 767px) {
+  .product-rating i {
+    font-size: 15px;
+  }
+}
+.text-secondary {
+  color: #004975 !important;
+  position: relative;
+  text-align: center;
+}
+.card-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.card-wrapper .card-img {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.card-wrapper .card-img img {
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.card-wrapper .card-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  transform: translateX(-100%);
+  transition: 0.8s;
+  z-index: 11;
+}
+
+.card-wrapper:before {
+  content: "";
+}
+
+.firstImg:before {
+  content: "If you think you know pixies, think again! Find a chic and edgy short pixie that will prove that not all these looks are created equal.";
+  font-size: 4vw;
+  width: 100%;
+  font-size: 4vw;
+  font-family: Cursive;
+  color: #e0e4e7;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  z-index: 12;
+  transition: 0.8s;
+  background: rgba(47, 47, 48, 0.82);
+  border-radius: 0.25rem;
+}
+.secondImg:before {
+  content: "Add more volume to your thin, fine hair with one of these super cute cuts that became popular in the 70's!";
+  font-size: 4vw;
+  width: 100%;
+  font-size: 4vw;
+  font-family: Cursive;
+  color: #e0e4e7;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  z-index: 12;
+  transition: 0.8s;
+  background: rgba(47, 47, 48, 0.82);
+  border-radius: 0.25rem;
+}
+.thirdImg:before {
+  content: "If you're afraid to go too short with a pixie, then you must check out one of these gorgeous lixies (long pixies!)";
+  font-size: 4vw;
+  width: 100%;
+  font-size: 4vw;
+  font-family: Cursive;
+  color: #e0e4e7;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  z-index: 12;
+  transition: 0.8s;
+  background: rgba(47, 47, 48, 0.82);
+  border-radius: 0.25rem;
+}
+.fourthImg:before {
+  content: "Get ready to be inspired for your next edgy look. Whether you want to have shaved sides and longer hair on top or an edgy pattern underneath your hair, you'll find a cool undercut look for you.";
+  font-size: 4vw;
+  width: 100%;
+  font-size: 4vw;
+  font-family: Cursive;
+  color: #e0e4e7;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  z-index: 12;
+  transition: 0.8s;
+  background: rgba(47, 47, 48, 0.82);
+  border-radius: 0.25rem;
+}
+.fifthImg:before {
+  content: "These are some of my favorite stacked bobs haircuts and hairstyles for this year! Come see which one will suit you best.";
+  font-size: 4vw;
+  width: 100%;
+  font-size: 4vw;
+  font-family: Cursive;
+  color: #e0e4e7;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  z-index: 12;
+  transition: 0.8s;
+  background: rgba(47, 47, 48, 0.82);
+  border-radius: 0.25rem;
+}
+
+.card-wrapper:hover:before {
+  right: 0;
+}
+.card-wrapper h3,
+.card-wrapper p {
+  color: #fff;
+}
+.card-wrapper .read-more {
+  color: #fff;
+}
+.card-wrapper .read-more:after {
+  color: #fff;
+}
+.card-wrapper:hover .card-section {
+  visibility: visible;
+  transform: translateX(0px);
+}
+.card-wrapper:hover .backgound-color {
+  right: 0;
+}
+
+.mb-2-6,
+.my-2-6 {
+  margin-bottom: 2.6rem;
+}
+.text-primary {
+  color: #00baee !important;
+}
+
+/* test css animations */
+
+.spanner span {
+  position: fixed;
+  bottom: -50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  animation: animate 10s linear infinite;
+}
+.spanner span:nth-child(1) {
+  left: 0;
+  animation-delay: 0.6s;
+  background-color: #8f71f3;
+}
+.spanner span:nth-child(2) {
+  left: 10%;
+  animation-delay: 3s;
+  background-color: #8f71f3;
+}
+.spanner span:nth-child(3) {
+  left: 20%;
+  animation-delay: 2s;
+  background-color: #000;
+}
+.spanner span:nth-child(4) {
+  left: 30%;
+  animation-delay: 5s;
+  background-color: #8f71f3;
+}
+.spanner span:nth-child(5) {
+  left: 40%;
+  animation-delay: 1s;
+  background-color: #8f71f3;
+}
+.spanner span:nth-child(6) {
+  left: 50%;
+  animation-delay: 7s;
+  background-color: #000;
+}
+.spanner span:nth-child(7) {
+  left: 60%;
+  animation-delay: 6s;
+  background-color: #000;
+}
+.spanner span:nth-child(8) {
+  left: 70%;
+  animation-delay: 8s;
+  background-color: #000;
+}
+.spanner span:nth-child(9) {
+  left: 80%;
+  animation-delay: 5s;
+  background-color: #8f71f3;
+}
+
+.spanner span:nth-child(10) {
+  left: 90%;
+  animation-delay: 4s;
+  background-color: #000;
+}
+
+@keyframes animate {
+  0% {
+    bottom: 0;
+    margin-left: 90px;
+    margin-right: 0;
+  }
+  20% {
+    bottom: 20%;
+    margin-left: 0;
+    margin-right: 90px;
+  }
+  40% {
+    bottom: 40%;
+    margin-left: 90px;
+    margin-right: 0;
+  }
+  60% {
+    bottom: 60%;
+    margin-left: 0;
+    margin-right: 90px;
+  }
+  80% {
+    bottom: 80%;
+    margin-left: 90px;
+    margin-right: 0;
+  }
+  100% {
+    bottom: 100%;
+    margin-left: 0;
+    margin-right: 90px;
+  }
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+strong {
+  font-size: 30px;
+  opacity: 0;
+  transition: all 1s ease;
+  /* transform: translateY(50px);
+  display: inline-block; */
+}
+
+strong.fade {
+  opacity: 1;
+  /* transform: translateY(0px); */
+}

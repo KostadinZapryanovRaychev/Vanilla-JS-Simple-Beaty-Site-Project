@@ -1,4 +1,6 @@
-    
+
+//why i cant merge app js and app 2 js 
+// functions for icons and arrows 
     var slideshow = document.getElementById("slideshow");
     var slides=slideshow.getElementsByTagName("img");
     var index =0;
@@ -33,3 +35,9 @@
         var nav =document.getElementById("navbar")
         nav.classList.toggle("active")
     }
+
+    $(function(){
+        $('.tip').tooltip();
+    });
+
+      
